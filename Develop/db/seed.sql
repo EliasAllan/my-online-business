@@ -35,3 +35,8 @@ VALUES
 ("2000","20","200"),
 ("3000","30","300"),
 ("4000","40","400");
+
+-- SELECT * FROM category
+-- SELECT * FROM product
+-- SELECT * FROM tag
+-- SELECT * FROM productTag

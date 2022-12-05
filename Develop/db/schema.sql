@@ -38,6 +38,6 @@ CREATE TABLE productTag(
   REFERENCES product(id),
   tag_id INT,
   FOREIGN KEY (tag_id)
-  REFERENCES tag(id),
+  REFERENCES tag(id)
 
 );
