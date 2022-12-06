@@ -17,7 +17,7 @@ CREATE TABLE category(
 CREATE TABLE product(
   id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
   product_name VARCHAR(100) NOT NULL,
-  price DECIMAL NOT NULL, -- validate it being decimal here --
+  price DECIMAL(10,2) NOT NULL, -- validate it being decimal --
   stock INT NOT NULL DEFAULT 10,
   category_id INT ,
   FOREIGN KEY (category_id)
