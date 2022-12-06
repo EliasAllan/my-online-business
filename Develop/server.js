@@ -1,3 +1,5 @@
+// require('dotenv').config()
+// console.log(process.env);
 const express = require('express');
 const routes = require('./routes');
 // import sequelize connection
@@ -9,9 +11,14 @@ const PORT = process.env.PORT || 3001;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(routes);
+// app.use(routes);
 
 // sync sequelize models to the database, then turn on the server
-app.listen(PORT, () => {
-  console.log(`App listening on port http://localhost:${PORT}/`);
+// sequelize.sync().then(() => {
+//   app.listen(PORT, () => console.log('Now listening'));
+// });
+
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => console.log('App listening on port http://localhost:${PORT}/'));
 });
+
