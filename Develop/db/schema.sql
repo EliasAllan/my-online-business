@@ -4,7 +4,7 @@ DROP DATABASE IF EXISTS ecommerce_db;
 -- CREATE DATABASE
 CREATE DATABASE ecommerce_db;
 
--- USE ecommerce_db;
+USE ecommerce_db;
 
 -- -- Add category table --
 -- CREATE TABLE category(
@@ -13,7 +13,7 @@ CREATE DATABASE ecommerce_db;
 -- );
 
 
--- -- Add product table --
+-- Add product table --
 -- CREATE TABLE product(
 --   id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 --   product_name VARCHAR(100) NOT NULL,

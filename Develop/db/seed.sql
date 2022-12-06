@@ -1,13 +1,13 @@
--- USE ecommerce_db;
+USE ecommerce_db;
 
--- INSERT INTO category 
--- -- columns should match the values below
--- (id,category_name)
--- VALUES 
--- ("1","Camping"),
--- ("2","LED Items"),
--- ("3","Hydration Packs"),
--- ("4","Hiking Shoes");
+INSERT INTO category 
+-- columns should match the values below
+(id,category_name)
+VALUES 
+("1","Camping"),
+("2","LED Items"),
+("3","Hydration Packs"),
+("4","Hiking Shoes");
 
 -- INSERT INTO product
 -- -- columns should match the values below
