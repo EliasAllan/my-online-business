@@ -6,7 +6,7 @@ CREATE DATABASE ecommerce_db;
 
 USE ecommerce_db;
 
--- -- Add category table --
+-- Add category table --
 -- CREATE TABLE category(
 --   id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 --   category_name VARCHAR(100) NOT NULL
